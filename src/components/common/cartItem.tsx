@@ -13,21 +13,16 @@ const CartItem = ({ cart }: { cart: ICart }) => {
         duration: 1,
       }}
     >
-      <motion.div
-        whileHover={{
-          translateY: -40,
-        }}
-        className="bg-yellow-200 min-w-60 cursor-pointer rounded-full p-5"
-      >
-        <motion.div className="flex justify-center">
+      <motion.div className="bg-yellow-200 lg:min-w-60 min-w-40 cursor-pointer rounded-2xl lg:rounded-full p-5">
+        <motion.div className="flex justify-center p-5">
           <img
             src={cart?.image}
             alt="Product Image"
-            className="w-50 h-50 object-cover rounded-full"
+            className="lg:w-50 lg:h-50 h-30 object-cover rounded-full"
           />
         </motion.div>
         <div className="text-center py-6 mb-4  text-lg">
-          <h1 className="font-bold text-2xl">{cart?.name}</h1>
+          <h1 className="font-bold lg:text-2xl text-xl">{cart?.name}</h1>
           <h1>{cart?.des}</h1>
         </div>
       </motion.div>

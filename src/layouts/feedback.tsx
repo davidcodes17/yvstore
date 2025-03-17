@@ -4,9 +4,9 @@ import { Input } from "@/components/ui/input";
 const Feedback = () => {
   return (
     <div>
-      <div className="bg-black p-10 rounded-full my-30">
+      <div className="bg-black p-10 lg:rounded-full my-30">
         <div className="flex justify-center">
-          <div className="w-[50%]">
+          <div className="lg:w-[50%]">
             <h1 className="text-[40px] text-white text-center">
               Share your Feedback
             </h1>
@@ -19,7 +19,7 @@ const Feedback = () => {
               <div className="">
                 <Input
                   className="w-fit rounded-full text-center text-lg text-white py-8"
-                  size={50}
+                  // size={50}
                   placeholder="Your Feedback"
                 />
                 <div className="flex cursor-pointer mt-5 justify-center">

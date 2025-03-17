@@ -9,12 +9,12 @@ const Product = () => {
         type: "spring",
         damping: 10,
       }}
-      className="w-100"
+      className="lg:w-100 w-50"
     >
       <div className="cursor-pointer">
         <img
           src="/micro.avif"
-          className="w-100 h-100 rounded-2xl"
+          className="w-100 lg:h-100 rounded-2xl"
           alt="Product Image"
         />
         <div className="py-2 flex items-center justify-between">

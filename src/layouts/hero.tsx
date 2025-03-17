@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="mb-10">
       <div className="flex items-center justify-center">
-        <div className="w-[50%] my-[60px] text-center">
+        <div className="w-full  lg:w-[60%] md:w-[80%] my-[60px] text-center">
           <motion.h1
             initial={{
               opacity: 0,
@@ -17,7 +17,7 @@ const Hero = () => {
               type: "spring",
               damping: 3,
             }}
-            className="text-[60px] mb-5 leading-26"
+            className="text-[40px] lg:text-[60px] mb-5 leading-20 lg:leading-26"
           >
             Welcome to{" "}
             <span className="bg-purple-300 px-10 py-2 rounded-full">Yemza</span>{" "}
@@ -28,7 +28,7 @@ const Hero = () => {
             for Quality & Affordability!
           </motion.h1>
           <motion.h1
-            className="text-[20px]"
+            className="text-sm lg:text-[20px] px-5"
             initial={{
               opacity: 0,
               translateY: 30,

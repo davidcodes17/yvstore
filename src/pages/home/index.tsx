@@ -8,7 +8,7 @@ import Products from "@/layouts/products";
 const Home = () => {
   return (
     <div className="">
-      <div className="pt-5 px-[50px]">
+      <div className="pt-5 px-5 lg:px-[50px]">
         <Header />
         <Hero />
         <Categories />

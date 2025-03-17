@@ -22,9 +22,11 @@ const Categories = () => {
   return (
     <div className="pt-30">
       <div className="">
-        <h1 className="text-[60px] text-center">Featured Categories</h1>
+        <h1 className="text-[40px] lg:text-[60px] text-center">
+          Featured Categories
+        </h1>
         <div className="py-10">
-          <div className="flex gap-10  justify-center">
+          <div className="flex gap-10  justify-center overflow-x-scroll">
             {data?.map((cart, key) => (
               <CartItem cart={cart} key={key} />
             ))}
