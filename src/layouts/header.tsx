@@ -1,6 +1,6 @@
 import Logo from "@/components/common/logo";
 import { Button } from "@/components/ui/button";
-import { Call, HambergerMenu } from "iconsax-react";
+import { Call } from "iconsax-react";
 
 const Header = () => {
   return (
