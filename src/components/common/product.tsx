@@ -9,15 +9,15 @@ const Product = () => {
         type: "spring",
         damping: 10,
       }}
-      className="lg:w-100 w-50"
+      className="lg:w-100 md:w-50 "
     >
       <div className="cursor-pointer">
         <img
           src="/micro.avif"
-          className="w-100 lg:h-100 rounded-2xl"
+          className="w-100 lg:h-100 lg:rounded-2xl rounded-sm"
           alt="Product Image"
         />
-        <div className="py-2 flex items-center justify-between">
+        <div className="py-2 flex flex-wrap items-center justify-between">
           <h1 className="font-bold">Microwave & Electric Cooker</h1>
           <h1 className="bg-yellow-200 text-sm px-5 p-2 rounded-full">
             Avaliable

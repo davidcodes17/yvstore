@@ -5,7 +5,7 @@ import { Call, HambergerMenu } from "iconsax-react";
 const Header = () => {
   return (
     // <div className="flex justify-center w-full">
-    <div className="flex justify-between py-5 cursor-pointer px-8 rounded-full items-center bg-white">
+    <div className="flex lg:justify-between justify-center py-5 cursor-pointer lg:px-8 rounded-full items-center bg-white">
       <Logo />
       <div className="lg:flex gap-10 hidden">
         <p>Home</p>
@@ -16,9 +16,9 @@ const Header = () => {
       <Button className="hidden lg:flex cursor-pointer w-[150px] py-6 rounded-full">
         <Call color="#fff" variant="Bulk" /> Call Us Now!
       </Button>
-      <div className="bg-[#000] lg:hidden flex p-3 rounded-full">
+      {/* <div className="bg-[#000] lg:hidden flex p-3 rounded-full">
         <HambergerMenu color="#fff" size={25} />
-      </div>
+      </div> */}
     </div>
     // </div>
   );

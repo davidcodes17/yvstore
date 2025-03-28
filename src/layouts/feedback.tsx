@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 const Feedback = () => {
   return (
     <div>
-      <div className="bg-black p-10 lg:rounded-full my-30">
+      <div className="bg-black p-10 lg:rounded-full rounded-2xl my-30">
         <div className="flex justify-center">
           <div className="lg:w-[50%]">
             <h1 className="text-[40px] text-white text-center">

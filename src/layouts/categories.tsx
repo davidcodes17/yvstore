@@ -20,9 +20,9 @@ const Categories = () => {
     },
   ];
   return (
-    <div className="pt-30">
+    <div className="lg:pt-30 pt-10">
       <div className="">
-        <h1 className="text-[40px] lg:text-[60px] text-center">
+        <h1 className="md:text-[40px] text-[30px] lg:text-[60px] text-center">
           Featured Categories
         </h1>
         <div className="py-10">
