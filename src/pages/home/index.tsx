@@ -8,9 +8,11 @@ import Products from "@/layouts/products";
 const Home = () => {
   return (
     <div className="">
-      <div className="lg:bg-[url('/bgg.jpg')] h-[100vh] pt-5 px-5 lg:px-[50px] bg-cover bg-top">
-        <Header />
-        <Hero />
+      <div className="lg:bg-[url('/img.jpg')] h-[100vh] bg-cover bg-top">
+        <div className="bg-[#dddddd41] pt-5 h-[100vh] backdrop-blur-none px-5 lg:px-[50px]">
+          <Header />
+          <Hero />
+        </div>
       </div>
       <div className="pt-5 px-5 lg:px-[50px]">
         <Categories />

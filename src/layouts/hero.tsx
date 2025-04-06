@@ -17,18 +17,20 @@ const Hero = () => {
               type: "spring",
               damping: 3,
             }}
-            className="md:text-[40px] text-[30px] lg:text-[60px] mb-5 md:leading-20 leading-15 lg:leading-26"
+            className="md:text-[40px] font-bold text-[#fff] text-[30px] lg:text-[60px] mb-5 md:leading-20 leading-15 lg:leading-26"
           >
             Welcome to{" "}
-            <span className="bg-purple-300 px-10 py-2 rounded-full">Yemza</span>{" "}
+            <span className="bg-purple-300 text-[#000] font-medium px-10 py-2 rounded-full">
+              Yemza
+            </span>{" "}
             Varieties Store –{" "}
-            <span className="bg-yellow-200 px-10 py-2 rounded-full">
+            <span className="bg-yellow-200  text-[#000] font-medium px-10 py-2 rounded-full">
               Your One-Stop Shop
             </span>{" "}
             for Quality & Affordability!
           </motion.h1>
           <motion.h1
-            className="text-sm lg:text-[20px] lg:px-5"
+            className="text-sm lg:text-[20px] text-[#fff] bg-[#00000050] backdrop-blur-2xl cursor-pointer py-5 rounded-full lg:px-5"
             initial={{
               opacity: 0,
               translateY: 30,
@@ -77,7 +79,7 @@ const Hero = () => {
             type: "spring",
             damping: 3,
           }}
-          className="border-[0.6px] border-[#ddd] cursor-pointer w-fit lg:p-8 p-5 text-[#aaa] text-center rounded-full"
+          className="border-[0.6px] border-[#000] cursor-pointer w-fit lg:p-8 p-5 text-[#000] text-center rounded-full"
         >
           <p>Explore</p>
           <p>Products</p>
