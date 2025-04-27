@@ -1,93 +1,40 @@
-import { motion } from "framer-motion";
-import { ArrowDown } from "iconsax-react";
 const Hero = () => {
   return (
-    <div className="my-15 ">
-      <div className="flex items-center justify-center">
-        <div className="w-full lg:w-[60%] md:w-[80%] my-[30px] lg:my-[60px] text-center">
-          <motion.h1
-            initial={{
-              opacity: 0,
-              translateY: -30,
-            }}
-            whileInView={{ opacity: 1, translateY: 0 }}
-            transition={{
-              delay: 0.5,
-              duration: 1,
-              type: "spring",
-              damping: 3,
-            }}
-            className="md:text-[40px] font-bold text-[#fff] text-[30px] lg:text-[60px] mb-5 md:leading-20 leading-15 lg:leading-26"
-          >
-            Welcome to{" "}
-            <span className="bg-purple-300 text-[#000] font-medium px-10 py-2 rounded-full">
-              Yemza
-            </span>{" "}
-            Varieties Store –{" "}
-            <span className="bg-yellow-200  text-[#000] font-medium px-10 py-2 rounded-full">
-              Your One-Stop Shop
-            </span>{" "}
-            for Quality & Affordability!
-          </motion.h1>
-          <motion.h1
-            className="text-sm lg:text-[20px] text-[#fff] bg-[#00000050] backdrop-blur-2xl cursor-pointer py-5 rounded-full lg:px-5"
-            initial={{
-              opacity: 0,
-              translateY: 30,
-            }}
-            whileInView={{ opacity: 1, translateY: 0 }}
-            transition={{
-              delay: 1,
-              duration: 1,
-              type: "tween",
-              // damping: 3,
-            }}
-          >
-            At Yemza Varieties Store, we bring you a diverse selection of
-            top-quality products at unbeatable prices. Whether you're looking
-            for fashion, home essentials, beauty products, electronics, or
-            everyday necessities, we’ve got you covered!
-          </motion.h1>
-        </div>
-
-        {/* <img
-          src="/hero.jpg"
-          alt="Hero Image"
-          className="w-[40%] rounded-[40px]"
-          /> */}
-      </div>
-      <motion.div
-        initial={{
-          opacity: 0,
-          translateY: -30,
-        }}
-        whileInView={{ opacity: 1, translateY: 0 }}
-        transition={{
-          delay: 0.5,
-          duration: 1,
-          type: "spring",
-          damping: 3,
-        }}
-        className="flex justify-center pt-5"
-      >
-        <motion.div
-          whileHover={{
-            translateY: 20,
-          }}
-          transition={{
-            // duration: 0.6,
-            type: "spring",
-            damping: 3,
-          }}
-          className="border-[0.6px] border-[#000] cursor-pointer w-fit lg:p-8 p-5 text-[#000] text-center rounded-full"
-        >
-          <p>Explore</p>
-          <p>Products</p>
-          <div className="flex justify-center pt-3">
-            <ArrowDown color="#000" size={25} />
+    <div className="lg:mt-20 mt-15">
+      <div className="flex justify-center">
+        <div className="lg:w-[80%] w-full">
+          <h1 className="lg:text-[80px] text-[30px] uppercase font-bold text-center">
+            Transform your space with Sustainable Products
+          </h1>
+          <div className="flex lg:flex-nowrap flex-wrap justify-center gap-5 cursor-pointer pt-10">
+            <img
+              src="https://hogfurniture.co/cdn/shop/files/WhatsAppImage2023-06-13at4.25.51PM_1.jpg?v=1686735244&width=1500"
+              className="rounded-full lg:h-40 h-20 w-40 object-cover object-top"
+              alt=""
+            />
+            <img
+              src="https://www.the-citizenry.com/cdn/shop/products/Mercado_Storage_Basket_Set_of_3_1.jpg?v=1656104909"
+              className="rounded-full lg:h-40 h-20 w-40 object-cover object-top"
+              alt=""
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71l+ZDK9IdL._AC_UF894,1000_QL80_.jpg"
+              className="rounded-full lg:h-40 h-20 w-40 object-cover object-top"
+              alt=""
+            />
+            <img
+              src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/23/7547012/1.jpg?1683"
+              className="rounded-full lg:h-40 h-20 w-40 object-cover object-top"
+              alt=""
+            />
+            <img
+              src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/71/5106183/1.jpg?6414"
+              className="rounded-full lg:h-40 h-20 w-40 object-cover object-top"
+              alt=""
+            />
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,40 +1,33 @@
 import Logo from "@/components/common/logo";
-import { Call, Sms } from "iconsax-react";
+import { Facebook, Instagram, Sms, Whatsapp } from "iconsax-react";
 
 const Footer = () => {
   return (
-    <div>
-      <hr />
-      <div className="flex lg:justify-center flex-wrap lg:gap-20 gap-5 p-10">
-        <div className="">
-          <Logo />
-          <h1 className="text-center py-5">
-            All Rights Reserved &copy; YVStore
-          </h1>
-        </div>
-        <div className=" space-y-6">
-          <h1 className="text-2xl font-bold">Contact Us</h1>
-          <div className="space-y-4">
-            {/* Email Section */}
-            <div className="flex items-center space-x-3">
-              <Sms color="#000" size={30} />
-              <a
-                href="mailto:lydiaomoyemi@gmail.com"
-                className="hover:underline"
-              >
-                Email us: lydiaomoyemi@gmail.com
-              </a>
-            </div>
-
-            {/* Phone Section */}
-            <div className="flex items-center space-x-3">
-              <Call color="#000" size={30} />
-              <a href="tel:+2348039266492" className="hover:underline">
-                Call us: +2348039266492
-              </a>
-            </div>
+    <div className="p-10 bg-[#000] rounded-t-4xl mt-20">
+      <div className="">
+        <div className="flex flex-wrap gap-10 justify-center lg:flex-nowrap lg:justify-between">
+          <div className="flex items-center gap-4">
+            <Logo />
+            <h1 className="text-white text-[20px]">Yemi Stores Ventures </h1>
+          </div>
+          <div className="flex gap-4">
+            <a href="">
+              <Facebook color="#fff" size={30} />
+            </a>
+            <a href="">
+              <Whatsapp color="#fff" size={30} />
+            </a>
+            <a href="">
+              <Instagram color="#fff" size={30} />
+            </a>
+            <a href="">
+              <Sms color="#fff" size={30} />
+            </a>
           </div>
         </div>
+        <h1 className="text-center pt-10 text-white text-[20px]">
+          &copy; All Rights Reserved 2025
+        </h1>
       </div>
     </div>
   );

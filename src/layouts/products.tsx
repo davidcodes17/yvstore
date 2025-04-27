@@ -2,18 +2,30 @@ import Product from "@/components/common/product";
 
 const Products = () => {
   return (
-    <div className="lg:mt-50 mt-20">
-      <div className="">
-        <h1 className="md:text-[40px] text-[30px] lg:text-[60px] text-center">
-          Avaliable Products
+    <div>
+      <div className="mt-20">
+        <h1 className="lg:text-[50px] text-[30px] text-center uppercase font-bold">
+          Our Best Quality Products
         </h1>
-        <div className="mt-10 lg:mt-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10 lg:gap-20 justify-items-center">
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+        <div className="flex overflow-x-scroll gap-5 justify-center py-6">
+          <h1 className="px-10 hover:bg-[#000] hover:text-white py-3 cursor-pointer border-[1px] border-[#000] rounded-full">
+            All
+          </h1>
+          <h1 className="px-10 hover:bg-[#000] hover:text-white py-3 cursor-pointer border-[1px] border-[#000] rounded-full">
+            Pots
+          </h1>
+          <h1 className="px-10 hover:bg-[#000] hover:text-white py-3 cursor-pointer border-[1px] border-[#000] rounded-full">
+            Plates
+          </h1>
+          <h1 className="px-10 hover:bg-[#000] hover:text-white py-3 cursor-pointer border-[1px] border-[#000] rounded-full">
+            Spoons
+          </h1>
+          <h1 className="px-10 hover:bg-[#000] hover:text-white py-3 cursor-pointer border-[1px] border-[#000] rounded-full">
+            Knives
+          </h1>
+        </div>
+
+        <div className="grid lg:gap-10 gap-5 py-10 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-2">
           <Product />
           <Product />
           <Product />
