@@ -1,9 +1,9 @@
-import About from "@/layouts/about";
+// import About from "@/layouts/about";
 import Footer from "@/layouts/footer";
 import Header from "@/layouts/header";
 import Hero from "@/layouts/hero";
 import Newsletter from "@/layouts/newsletter";
-import NumberSide from "@/layouts/numberSide";
+// import NumberSide from "@/layouts/numberSide";
 import Products from "@/layouts/products";
 
 const Home = () => {
@@ -11,9 +11,9 @@ const Home = () => {
     <div className="lg:px-20 p-5 lg:pt-10">
       <Header />
       <Hero />
-      <NumberSide />
+      {/* <NumberSide /> */}
       <Products />
-      <About />
+      {/* <About /> */}
       <Newsletter />
       <Footer />
     </div>

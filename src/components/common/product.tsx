@@ -1,17 +1,37 @@
-const Product = () => {
+import { IProduct } from "@/types/types-file";
+import { useState } from "react";
+
+const placeholderImg =
+  "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png";
+
+const getTrimmedName = (name: string) => {
+  return name.split(" ").slice(0, 3).join(" ");
+};
+
+const Product = ({ product }: { product: IProduct }) => {
+  const [imgSrc, setImgSrc] = useState(product?.img || placeholderImg);
+
   return (
-    <div className="cursor-pointer">
-      <div className="relative w-full">
-        <img
-          src="https://hogfurniture.co/cdn/shop/files/WhatsAppImage2023-06-13at4.25.51PM_1.jpg?v=1686735244&width=1500"
-          className="rounded-2xl"
-        />
-        <div className="flex items-center justify-between pt-3">
-          <h1 className="lg:text-[30px] text-md">Pot Set</h1>
-          <h1 className="lg:text-[30px] text-md">₦40000</h1>
+    <a href="https://wa.link/rowvn7">
+      <div className="cursor-pointer">
+        <div className="relative w-full">
+          <img
+            src={imgSrc}
+            onError={() => setImgSrc(placeholderImg)}
+            className="rounded-2xl w-full h-100 object-cover"
+            alt={product.name}
+          />
+          <div className="flex items-center justify-between pt-3">
+            <h1 className="lg:text-[20px] text-md truncate max-w-[70%]">
+              {getTrimmedName(product.name)}
+            </h1>
+            <h1 className="lg:text-[20px] text-md whitespace-nowrap">
+              ₦{product.price}
+            </h1>
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
