@@ -1,25 +1,23 @@
 import { IProduct } from "@/types/types-file";
 import { useState } from "react";
 
-const placeholderImg =
-  "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png";
+// const placeholderImg =
+//   "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png";
 
 const getTrimmedName = (name: string) => {
   return name.split(" ").slice(0, 3).join(" ");
 };
 
 const Product = ({ product }: { product: IProduct }) => {
-  const [imgSrc, setImgSrc] = useState(product?.img || placeholderImg);
-
   return (
     <a href="https://wa.link/rowvn7">
       <div className="cursor-pointer">
         <div className="relative w-full">
           <img
-            src={imgSrc}
-            onError={() => setImgSrc(placeholderImg)}
+            src={product?.img}
+            // onError={() => setImgSrc(placeholderImg)}
             className="rounded-2xl w-full h-100 object-cover"
-            alt={product.name}
+            // alt={product.name}
           />
           <div className="flex items-center justify-between pt-3">
             <h1 className="lg:text-[20px] text-md truncate max-w-[70%]">
@@ -34,5 +32,4 @@ const Product = ({ product }: { product: IProduct }) => {
     </a>
   );
 };
-
 export default Product;

@@ -2,6 +2,7 @@ import Product from "@/components/common/product";
 import { productsData } from "@/data";
 
 const Products = () => {
+  console.log(productsData, "DATA");
   return (
     <div id="products">
       <div className="lg:pt-50 pt-20">
