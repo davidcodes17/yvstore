@@ -1,10 +1,5 @@
 import { IProduct } from "@/types/types-file";
-// const placeholderImg =
-//   "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png";
-
-const getTrimmedName = (name: string) => {
-  return name.split(" ").slice(0, 3).join(" ");
-};
+import { Button } from "../ui/button";
 
 const Product = ({ product }: { product: IProduct }) => {
   return (
@@ -17,14 +12,12 @@ const Product = ({ product }: { product: IProduct }) => {
             className="rounded-2xl w-full h-100 object-cover"
             // alt={product.name}
           />
-          <div className="flex items-center justify-between pt-3">
-            <h1 className="lg:text-[20px] text-md truncate max-w-[70%]">
-              {getTrimmedName(product.name)}
-            </h1>
-            <h1 className="lg:text-[20px] text-md whitespace-nowrap">
-              ₦{product.price}
-            </h1>
-          </div>
+          <h1 className="lg:text-[20px] text-md mt-2 text-center">
+            {product.name}
+          </h1>
+          <Button className="lg:text-[20px] w-full py-6 text-md ">
+            ₦{product.price}
+          </Button>
         </div>
       </div>
     </a>
