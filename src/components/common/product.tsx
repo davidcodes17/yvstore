@@ -1,6 +1,4 @@
 import { IProduct } from "@/types/types-file";
-import { useState } from "react";
-
 // const placeholderImg =
 //   "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png";
 
